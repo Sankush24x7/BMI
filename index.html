@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="BMI-LOGO.png" type="image/x-icon">
+    <script>
+    function cal()
+{
+    var name=document.getElementById("n");
+    var x=parseInt(document.getElementById("#val1").Value);
+    var y=parseInt(document.getElementById("#val2").Value);
+    document.getElementById("res").innerHTML=x*y;
+}
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+
+            <center>
+                <h1 class="page_name">BMI CALCULATOR</h1>
+            </center>
+        </div>
+
+        <div class="containt">
+            <div class="main">
+                <div class="userName">
+                    <label for="userName" id="w">NAME </label><br>
+                    <input type="text" name="userName" id="n" class="userName">
+                </div>
+                <div class="height">
+                    <label for="HEIGHT" id="w">HEIGHT</label><br>
+                    <input type="text" name="HEIGHT" placeholder="cm" id="val1" class="userName">
+                </div>
+                <div class="weight">
+                    <label for="WEIGHT" id="w">WEIGHT</label><br>
+                    <input type="text" name="WEIGHT" placeholder="kg" id="val2" class="userName">
+                </div>
+                <div class="buttons">
+                    <div class="calculate">
+                        <button id="but" class="but1" onclick="cal()">CALCULATE</button>
+                    </div>
+                    <div class="reset">
+                        <input type="reset"  id="but" class="but2" value="RESET">
+                    </div>
+                </div>
+                <div class="cal" id="w">
+                    <label for="calculation">RESULT</label><br>
+                    <span id="res"></span>
+                    <p class="kc">kg/cm</p>
+                </div>
+            </div>
+            <div class="result">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
